@@ -1,5 +1,7 @@
-mod hello_world;
+use crate::guess_number::guess_number;
+
+mod guess_number;
 
 fn main() {
-    hello_world::format_output();
+    guess_number()
 }
