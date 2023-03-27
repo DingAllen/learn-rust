@@ -1,7 +1,10 @@
-use crate::guess_number::guess_number;
+mod chapter3_homework;
 
-mod guess_number;
+use chapter3_homework::parse_temperature;
+use crate::chapter3_homework::{fibonacci, print_christmas_song};
 
 fn main() {
-    guess_number()
+    parse_temperature();
+    println!("{}", fibonacci(20));
+    print_christmas_song();
 }
